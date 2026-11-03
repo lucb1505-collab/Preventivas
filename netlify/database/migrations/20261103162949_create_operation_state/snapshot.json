@@ -1,0 +1,79 @@
+{
+  "version": "8",
+  "dialect": "postgres",
+  "id": "e257eec0-ed1c-4749-a684-285937302c5e",
+  "prevIds": [
+    "00000000-0000-0000-0000-000000000000"
+  ],
+  "ddl": [
+    {
+      "isRlsEnabled": false,
+      "name": "operation_state",
+      "entityType": "tables",
+      "schema": "public"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "id",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "operation_state"
+    },
+    {
+      "type": "jsonb",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "equipment_list",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "operation_state"
+    },
+    {
+      "type": "jsonb",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "logs",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "operation_state"
+    },
+    {
+      "type": "integer",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "0",
+      "generated": null,
+      "identity": null,
+      "name": "revision",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "operation_state"
+    },
+    {
+      "columns": [
+        "id"
+      ],
+      "nameExplicit": false,
+      "name": "operation_state_pkey",
+      "schema": "public",
+      "table": "operation_state",
+      "entityType": "pks"
+    }
+  ],
+  "renames": []
+}

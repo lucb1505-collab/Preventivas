@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+@theme { --font-sans: 'IBM Plex Sans', sans-serif; --color-sky-400: #7dc6d3; --color-sky-500: #247f94; --color-slate-950: #0b1421; --color-slate-900: #121f30; }
+body { margin:0; background:#0b1421; }
+button, label[for], select { cursor:pointer; }
+button, input, select, textarea { transition: background-color .15s, border-color .15s; }
+button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline:2px solid #7dc6d3; outline-offset:3px; }
+h1,h2,h3 { font-family:'Barlow Condensed',sans-serif; letter-spacing:.025em; }
+.nemak-app header h1 { font-size:1.7rem; flex-wrap:wrap; }
+.nemak-app header h1 span { font-family:'IBM Plex Sans',sans-serif; letter-spacing:0; }
+.nemak-app header > div { flex-wrap:wrap; }
+.nemak-app header { border-top:3px solid #247f94; }
+.nemak-app main { animation:appear .35s ease-out; }
+.nemak-app .fixed > .max-w-lg, .nemak-app .fixed > .max-w-md, .nemak-app .fixed > .max-w-2xl { max-height:90dvh; overflow-y:auto; }
+@keyframes appear { from {opacity:0;transform:translateY(8px)} to {opacity:1;transform:translateY(0)} }
+@media(max-width:640px) { .nemak-app header h1 {font-size:1.35rem} .nemak-app header > div > div:last-child {max-width:100%;overflow-x:auto} .nemak-app header button {white-space:nowrap;padding:8px} }
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after {animation:none!important;transition:none!important} }
